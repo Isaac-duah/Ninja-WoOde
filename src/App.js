@@ -3,6 +3,7 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
+import Carousel from "./components/Carousel";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<Page title="About" />} />
       </Routes> */}
       <Homepage />
+      <Carousel />
     </Router>
   );
 }

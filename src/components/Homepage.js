@@ -2,7 +2,8 @@ import ImageOneHomepage from "../images/ImageOneHomepage.png"; // go up one leve
 import Golf from "../images/GolfImage.png";
 import Swim from "../images/SwimImage.png";
 import Tennis from "../images/RacketImage.png";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 
 function Homepage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,7 @@ function Homepage() {
     "Polo",
     "Taekwondo",
   ];
+
   return (
     <div>
       {/* Grid Level -1 */}
@@ -86,7 +88,6 @@ function Homepage() {
           />
         </div>
       </div>
-
       {/* Grid Level -2 */}
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 p-12 space-y-20">
         {/* Right Side -  Image */}
@@ -105,7 +106,6 @@ function Homepage() {
           </button>
         </div>
       </div>
-
       {/* Grid Level -3 */}
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 p-12  space-y-20 ">
         {/* Left Side - Text */}
@@ -129,7 +129,6 @@ function Homepage() {
           />
         </div>
       </div>
-
       {/* Grid Level -4 */}
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 p-12 space-y-20">
         {/* Right Side -  Image */}
